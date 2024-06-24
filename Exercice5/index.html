@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Page sans Accessibilité</title>
-</head>
-<body>
-<h1>Titre de la Page</h1>
-<p>Ceci est un paragraphe de texte.</p>
+  </head>
+  <body>
+    <h1>Titre de la Page</h1>
+    <p>Ceci est un paragraphe de texte.</p>
 
-<!-- Formulaire sans étiquette pour les champs -->
-<form>
-    <input id="name" type="text" placeholder="Entrez votre nom">
-    <input id="email" type="email" placeholder="Entrez votre adresse e-mail">
-    <button type="submit">Envoyer</button>
-</form>
+    <!-- Formulaire sans étiquette pour les champs -->
+    <form>
+      <label for="name">Nom :</label>
+      <input id="name" type="text" placeholder="Entrez votre nom" />
+      <label for="email">E-mail :</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Entrez votre adresse e-mail"
+      />
+      <button type="submit">Envoyer</button>
+    </form>
 
-<!-- Image sans attribut alt -->
-<img src="assets/image.png" height=250>
+    <!-- Image sans attribut alt -->
+    <img src="assets/image.png" height="250" alt="Description de l'image" />
 
-<!-- Lien sans texte descriptif -->
-<a href="#">Cliquez ici</a>
-</body>
+    <!-- Lien sans texte descriptif -->
+    <a
+      href="#"
+      aria-label="Description de la destination du lien"
+      title="destination du lien"
+      >En savoir plus</a
+    >
+  </body>
 </html>
